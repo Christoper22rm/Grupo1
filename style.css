@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(./img/fondo.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: #F5EDDC;
+    height: 100vh;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    margin: 5px;
+}
+
+.container p {
+    font-size: 12px;
+}
+
+.container a {
+    color: #000;
+   margin: 40px;
+   text-decoration: none;
+   border: 1px solid #DCD7C9;
+   padding: 5px 10px;
+   transition: 0.4s;
+}
+
+.container a:hover {
+    border: 1px solid #000;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.form-container input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #000;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+.form-container .lbl-nombre {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #5A8F7B;
+}
+
+.form-container .lbl-nombre::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #000;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-nomb {
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .lbl-nombre .text-nomb {
+    transform: translateY(-150%);
+    font-size: 14px;
+}
+
+.form-container a {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    background-color: #FCF8E8;
+    padding: 100px;
+}
+
+.info {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info .info-add {
+    width: 40%;
+    height: 100%;
+}
+
+.info .info-add p{
+    font-size: 13px;
+    width: 70%;
+}
+
+.info .info-add a{
+   color: #000;
+   text-decoration: none;
+   border: 1px solid #000;
+   padding: 5px 10px;
+}
+
+.info .info-pais {
+    width: 40%;
+    text-align: start;
+}
+
+.info .info-id {
+    width: 40%;
+    text-align: start;
+}
+
+.info .info-id ul {
+    list-style: none;
+    text-align: start;
+}
+
+
+
+
+
+
